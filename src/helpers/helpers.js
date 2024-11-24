@@ -10,7 +10,7 @@ export function isValidUUID(uuid) {
 }
 
 export async function resolveDNS (domain) {
-    const dohURL = 'https://cloudflare-dns.com/dns-query';
+    const dohURL = 'https://4arbug92l7.cloudflare-gateway.com/dns-query';
     const dohURLv4 = `${dohURL}?name=${encodeURIComponent(domain)}&type=A`;
     const dohURLv6 = `${dohURL}?name=${encodeURIComponent(domain)}&type=AAAA`;
 
@@ -61,7 +61,7 @@ export async function handlePanel(request, env) {
 
 export async function fallback(request) {
     const url = new URL(request.url);
-    url.hostname = 'www.speedtest.net';
+    url.hostname = 'parspack.com';
     url.protocol = 'https:';
     request = new Request(url, request);
     return await fetch(request);
