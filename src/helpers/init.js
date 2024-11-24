@@ -1,5 +1,5 @@
 import { isValidUUID } from './helpers';
-const defaultProxyIP = 'bpb.yousef.isegaro.com';
+const defaultProxyIP = 'proxyip.digitalocean.hw.090227.xyz';
 let userID, dohURL, proxyIP, trojanPassword, defaultHttpPorts, defaultHttpsPorts, panelVersion, hostName, origin, client, pathName;
 
 function initParams(request, env) {
