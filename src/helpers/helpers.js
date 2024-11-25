@@ -10,7 +10,7 @@ export function isValidUUID(uuid) {
 }
 
 export async function resolveDNS (domain) {
-    const dohURL = 'https://4arbug92l7.cloudflare-gateway.com/dns-query';
+    const dohURL = 'https://sky.rethinkdns.com/dns-query';
     const dohURLv4 = `${dohURL}?name=${encodeURIComponent(domain)}&type=A`;
     const dohURLv6 = `${dohURL}?name=${encodeURIComponent(domain)}&type=AAAA`;
 
