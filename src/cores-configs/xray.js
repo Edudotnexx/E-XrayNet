@@ -44,7 +44,7 @@ async function buildXrayDNS (proxySettings, outboundAddrs, domainToStaticIPs, is
     const isBypass = bypassIran || bypassChina || bypassRussia;
     const isBlock = blockAds || blockPorn || customBlockRulesDomains.length > 0;
     const finalRemoteDNS = isWorkerLess
-        ? ["https://cloudflare-dns.com/dns-query"]
+        ? ["https://sky.rethinkdns.com/dns-query"]
         : isWarp
             ? warpEnableIPv6 
                 ? ["1.1.1.1", "1.0.0.1", "2606:4700:4700::1111", "2606:4700:4700::1001"] 
