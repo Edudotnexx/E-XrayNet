@@ -5,7 +5,7 @@ export async function getConfigAddresses(hostName, cleanIPs, enableIPv6) {
     const defaultIPv6 = enableIPv6 ? resolved.ipv6.map((ip) => `[${ip}]`) : []
     return [
         hostName,
-        'speed.cloudflare.com',
+        'parspack.com',
         ...resolved.ipv4,
         ...defaultIPv6,
         ...(cleanIPs ? cleanIPs.split(',') : [])
